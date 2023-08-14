@@ -1,0 +1,143 @@
+-- USE: SELECT * from jobs; 
+-- to get the list
+
+--Select * from jobs order by activity_level, company_name ASC;--
+-- To get from most active platform -- 
+
+
+CREATE TABLE jobs (
+  ref_id INT PRIMARY KEY AUTO_INCREMENT ,
+  company_name VARCHAR(40) UNIQUE,
+  twitter_handle VARCHAR(40),
+  url VARCHAR(40),
+  activity_level VARCHAR(15)
+);
+drop table jobs;
+
+ALTER TABLE jobs
+MODIFY url VARCHAR(120);
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Web3Career', '@web3career', 'https://web3.career/', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Crypto Jobs List', '@CryptoJobsList', 'https://cryptojobslist.com/', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Cryptocurrency Jobs', '@jobsincrypto', 'https://cryptocurrencyjobs.co/', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Crypto Careers', '@crypto_careers', 'https://www.crypto-careers.com/', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Web3nomads', '@Web3nomadsJobs', 'https://www.web3nomads.jobs/', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Linkedin', '@Linkedin', 'https://www.linkedin.com', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Remoteok', '@WRemoteOK', 'https://remoteok.com/', 'Low');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Rethinkable', '@rethinkablexyz', 'https://rethinkable.xyz/jobs', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Xjobs', '@xjobs_io', 'https://xjobs.io/job', 'Very Low');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('LaborX', '@LaborXNews', 'https://laborx.com/vacancies', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('CoinBase Ventures', '@coinbase', '//https://coinbase.getro.com/jobs', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Animoca Brands', '@animocabrands', 'https://careers.animocabrands.com/jobs', 'Low');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Shima Capital', '@shimacapital', 'https://jobs.shima.capital/jobs', 'Low');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('The Spartan Group', '@thespartangroup', 'https://jobs.spartangroup.io/jobs', 'Low');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Polychain Capital', '@polychain', 'https://jobs.polychain.capital/jobs', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Pantera Capital', '@PanteraCapital', 'https://jobs.panteracapital.com/jobs', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Digital Currency group', '@DCGco', 'https://jobs.dcg.co/jobs', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Dragonfly Capital', '@dragonfly_xyz', 'https://jobs.dragonfly.xyz/jobs', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Polygon', '@0xPolygonLabs', 'https://polygon.technology/ecosystem-jobs', 'Low');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Binance', '@Binance', 'https://www.binance.com/en/careers/job-openings?team=All', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Jump Capital', '@jumpcapital', 'https://jobs.jumpcap.com/companies', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('GBV Capital', '@gbvofficial', 'https://www.gbv.capital/opportunities', 'Low');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Fenbushi Capital', '@fenbushi', 'https://careers.fenbushicapital.vc/jobs', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Signum Capital', '@Signum_capital', 'https://jobs.signum.capital/jobs', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Coinfund', '@coinfund_io', 'https://jobs.coinfund.io/jobs', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Delphi Digital', '@Delphi_Digital', 'https://jobs.delphiventures.io/companies', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Paradigm', '@Paradigm', 'https://www.paradigm.xyz/opportunities', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Sequoia Capital', '@Sequoia', 'https://jobs.sequoiacap.com/jobs', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Collab Currency', '@Collab_Currency', 'https://jobs.collabcurrency.com/jobs', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Blockchain Capital', '@blockchaincap', 'https://jobs.blockchaincapital.com/jobs', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Electric Capital', '@ElectricCapital', 'https://jobs.electriccapital.com/jobs', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Borderless Capital', '@borderless_cap', 'https://borderlesscapital.getro.com/jobs', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Protocol Labs', '@protocollabs', 'https://jobs.protocol.ai/companies', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('6MV', '@6thManVentures', 'https://jobs.6thman.ventures/jobs', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Rarestone Capital', '@rarestonecap', 'https://careers.rarestone.capital/jobs', 'Low');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Gumi Cryptos Capital', '@GumiCryptos', 'https://careers.gumi-cryptos.com/jobs', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Lattice', '@lattice_fund', 'https://jobs.lattice.fund/jobs', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Zee Prime Capital', '@ZeePrimeCap', 'https://zeeprime.capital/job-board', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Placeholder', '@placeholdervc', 'https://jobs.placeholder.vc/jobs', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Play ventures', '@playventures', 'https://careers.playventures.vc/jobs', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Dialectic Capital', '@Dialectic_CH', 'https://jobs.dialectic.ch/jobs', 'Very Low');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Angel DAO', '@AngelDAOorg', 'https://work.angeldao.org/0035b703090641faa2a9425d032d2311?v=ef6a3257f4a74059a45183ff575ffeda', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Alchemy', '@AlchemyPlatform', 'https://www.alchemy.com/careers#jobs', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Soma Capital', '@Soma_Capital', 'https://jobs.somacap.com/jobs', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Union Square Ventures', '@usv', 'https://jobs.usv.com/jobs', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Dework', 'deworkxyz', 'https://app.dework.xyz/bounties', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Archetype', '@archetypevc', 'https://jobs.archetype.fund/jobs', 'Low');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Griffin Gaming partners', '@Griffin_GP', 'https://careers.griffingp.com/jobs', 'Low');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Panony', '@Panonygroup', 'https://www.panony.com/jobboard.html', 'Low');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Gaingels', '@GaingelsVC', 'https://jobs.gaingels.com/jobs?markets=Crypto', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Mesh', '@ConsenSysMesh', 'https://careers.mesh.xyz/companies', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Volt Capital', '@VoltCapital', 'https://opportunities.volt.capital/companies', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('OP Crypto', '@OPCryptoVC', 'https://www.opcrypto.vc/careers-portfolios', 'Low');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Global Coin Research', '@Globalcoinrsrch', 'https://globalcoinresearch.com/jobs/', 'Very Low');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Fourth Revolution Capital', '@4RCapital', 'https://jobs.fourthrevolution.capital/jobs', 'Very Low');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Chapter One', '@ChapterOne', 'https://jobs.chapterone.com/companies', 'Low');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Semantic Ventures', '@SemanticVC', 'https://airtable.com/shrPILoDTvE1cVrvs/tbl4HZMl5Cdvnnn6a', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Impossible Finance', '@Impossiblefi', 'https://impossiblefinance.notion.site/Job-Board-c5a0648bb14944f39888f67f314a1e0d', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Greenfield', '@greenfield_cap', 'https://careers.greenfield.xyz/jobs', 'Medium');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Anthony Pompliano', '@APompliano', 'https://pompcryptojobs.com/', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Race Capital', '@racecapital', 'https://careers.race.capital/jobs', 'High');
+
+INSERT INTO jobs (company_name, twitter_handle, url, activity_level) VALUES('Bankless', '@BanklessHQ', 'https://bankless.pallet.com/jobs', 'Low');
+
